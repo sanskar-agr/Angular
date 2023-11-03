@@ -1,0 +1,17 @@
+<label for="name">Email: </label>
+<input id="name" type="text" [formControl]="Email">
+<p>Value: {{ Email.value }}</p>
+
+<button type="button" (click)="updateEmail()">Update Email</button>
+
+<form [formGroup]="Profile" (ngSubmit)="onSubmit()">
+
+    <label for="first-name">First Name: </label>
+    <input id="first-name" type="text" formControlName="firstName">
+  
+    <label for="last-name">Last Name: </label>
+    <input id="last-name" type="text" formControlName="lastName">
+    <button type="submit" >Submit</button>
+</form>
+
+

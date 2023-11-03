@@ -1,0 +1,10 @@
+
+<button type="button" (click)="displayName()">button</button>
+<button type="button" (click)="getIPDetail()">IP details</button>
+<p>{{title}}</p>
+<label for="item-input">Add an item:</label>
+<input type="text" id="item-input" #newItem>
+<button type="button" (click)="addNewItem(newItem.value)">Add to parent's list</button>
+
+<app-user-detail-input></app-user-detail-input>
+<app-profile-editor></app-profile-editor>
